@@ -11,5 +11,5 @@ const server = http.createServer((req, res) => {
 app.get('/', (req, res) => res.send('GET / working'));
 
 app.listen(PORT, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
+  console.log(`Server running PORT`);
 });
