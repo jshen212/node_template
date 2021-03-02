@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jshen212/node_template/issues"
   },
-  "homepage": "https://github.com/jshen212/node_template#readme"
+  "homepage": "https://github.com/jshen212/node_template#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

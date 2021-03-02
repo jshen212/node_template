@@ -1,4 +1,4 @@
-const http = require('http');
+const express = require('express')
 const PORT = process.env.PORT || 5000
 
 const server = http.createServer((req, res) => {
@@ -7,6 +7,6 @@ const server = http.createServer((req, res) => {
   res.end('Hello World');
 });
 
-server.listen(PORT, () => {
+express().listen(PORT, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
