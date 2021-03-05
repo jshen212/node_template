@@ -1,6 +1,6 @@
 const express = require('express');
-const PORT = process.env.PORT || 5000;
 const { Pool } = require('pg');
+const PORT = process.env.PORT || 5000;
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
   ssl: {
@@ -16,6 +16,7 @@ app
             const client = await pool.connect();
             const result = await client.query('SELECT * from test_table');
             const results = { 'results': (result) ? result.rows : null };
+            console.log('test pipeline change 2');
             res.send(results);
         } catch (error) {
             console.error(error);
